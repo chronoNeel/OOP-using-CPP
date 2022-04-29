@@ -17,7 +17,7 @@ public:
         achievements.push_back(ac);
     }
 
-    void showDetails(){
+    void showDetails1(){
         cout<<"Name: "<<name<<endl;
         cout<<"Team Name: "<<teamName<<endl;
         cout<<"Achievements: ";
@@ -33,7 +33,7 @@ public:
         goalScored=goal;
     }
 
-    void showDetails(){
+    void showDetails2(){
         cout<<"Name: "<<name<<endl;
         cout<<"Team Name: "<<teamName<<endl;
         cout<<"Achievements: ";
@@ -49,7 +49,7 @@ int main()
     p1.addAchievements("MoM1");
     p1.addAchievements("BestDEF2");
     p1.addAchievements("TrophyChamp");
-    p1.showDetails();
+    p1.showDetails1();
     cout<<endl;
 
     footballPlayer p2("Shakil","Predator",6);
@@ -57,11 +57,11 @@ int main()
     p2.addAchievements("MoM4");
     p2.addAchievements("TrophyChamp");
     p2.addAchievements("BestDEF");
-    p2.showDetails();
+    p2.showDetails2();
 
     footballPlayer p3("Joy","Predator", 7);
     p3.addAchievements("MoM3");
     p3.addAchievements("TrophyChamp");
     p3.addAchievements("Top Scorer");
-    p3.showDetails();
+    p3.showDetails2();
 }
